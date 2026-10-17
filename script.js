@@ -697,6 +697,14 @@ function startCountdown() {
 /* ─── MIDNIGHT REVEAL ─── */
 function triggerMidnight() {
   document.getElementById('midnight-burst').classList.add('flash');
+  
+  // 🎵 Music start karo
+  const bgMusic = document.getElementById('bgMusic');
+  if (bgMusic) {
+    bgMusic.volume = 0.6;
+    bgMusic.play().catch(() => {});
+  }
+
   setTimeout(() => {
     document.getElementById('curtain-left').classList.add('open');
     document.getElementById('curtain-right').classList.add('open');
@@ -705,7 +713,7 @@ function triggerMidnight() {
   setTimeout(() => {
     document.getElementById('quiz-screen').classList.add('show');
   }, 1000);
-}
+     }
 
 /* ─── CONFETTI SYSTEM ─── */
 function launchConfetti() {
