@@ -1660,4 +1660,19 @@ html, body {
     line-height: 1.55;
     margin-bottom: 14px;
   }
+
+   .surprise-paper-card {
+  overflow-y: auto !important;
+  padding-bottom: 90px !important; /* Neeche jagah banao */
+}
+
+.surprise-btn-group {
+  position: absolute !important;
+  bottom: 20px !important; /* Buttons ko fix karo */
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  z-index: 10;
+}
+   
 }
