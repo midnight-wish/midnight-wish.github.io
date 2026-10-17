@@ -1695,15 +1695,14 @@ html, body {
 }
 
 .surprise-btn-group {
-  position: absolute !important; /* Fixed nahi, card ke andar rahega */
-  bottom: 15px !important;
+  position: absolute !important; /* Fixed hata kar absolute karo */
+  bottom: 15px !important; 
   left: 0;
   width: 100%;
   display: flex !important;
   justify-content: center !important;
-  gap: 10px !important;
-  padding-bottom: 0 !important;
-  margin-top: 0 !important;
+  gap: 15px !important;
+  z-index: 9999;
 }
 
 .pill-btn {
