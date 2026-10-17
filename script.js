@@ -260,6 +260,7 @@ function handleChoice(choice) {
   const promptEl = document.getElementById('surprise-prompt');
   if (promptEl) {
     promptEl.style.display = 'none';
+     promptEl.style.marginBottom = '0'; /* <- YEH NAYI LINE ADD KARO */
   }
   const btnGroup = document.querySelector('.surprise-btn-group');
   if (btnGroup) {
