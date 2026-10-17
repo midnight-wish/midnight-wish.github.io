@@ -500,7 +500,7 @@ html, body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-bottom: clamp(6px, 1.5vh, 16px);
+  padding-bottom: clamp(10px, 3vh, 30px);
   margin-top: 2px;
   z-index: 10;
 }
