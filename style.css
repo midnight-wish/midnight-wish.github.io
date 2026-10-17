@@ -1664,15 +1664,19 @@ html, body {
    .surprise-paper-card {
   overflow-y: auto !important;
   padding-bottom: 90px !important; /* Neeche jagah banao */
-}
+      
+} 
+   .dance-gif-wrap{
+       max-hieght:22vh !important;
+   }
 
 .surprise-btn-group {
   position: absolute !important;
-  bottom: 20px !important; /* Buttons ko fix karo */
+  bottom: 15px !important; /* Buttons ko fix karo */
   left: 0;
   width: 100%;
   justify-content: center;
-  z-index: 10;
+  z-index: 999;
 }
    
 }
