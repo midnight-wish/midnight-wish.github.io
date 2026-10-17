@@ -132,11 +132,13 @@ function submitBirthdayDate() {
     triggerTitleAnim('anim-wave-drop');
 
     const promptEl = document.getElementById('surprise-prompt');
-    if (promptEl) {
-      promptEl.style.display = 'block';
-      promptEl.innerHTML = "Do you wanna see it ?";
-      triggerElementAnim(promptEl, 'prompt-entrance-pop');
-    }
+   
+if (promptEl) {
+  promptEl.style.display = 'block';
+  promptEl.style.marginBottom = '0'; /* <- YEH NAYI LINE ADD KARO */
+  promptEl.innerHTML = "Do you wanna see it ?";
+  triggerElementAnim(promptEl, 'prompt-entrance-pop');
+}
     const danceWrap = document.querySelector('.dance-gif-wrap');
     if (danceWrap) {
       triggerElementAnim(danceWrap, 'gif-entrance-pop');
