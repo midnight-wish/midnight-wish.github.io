@@ -1582,6 +1582,7 @@ html, body {
 
 
 /* ─── RESPONSIVE MOBILE (PORTRAIT FULL SCREEN) ─── */
+/* ─── RESPONSIVE MOBILE (PORTRAIT FULL SCREEN) ─── */
 @media (max-width: 768px) {
   .quiz-card {
     flex-direction: column;
@@ -1661,22 +1662,28 @@ html, body {
     margin-bottom: 14px;
   }
 
-   .surprise-paper-card {
-  overflow-y: auto !important;
-  padding-bottom: 90px !important; /* Neeche jagah banao */
-      
-} 
-   .dance-gif-wrap{
-       max-hieght:22vh !important;
-   }
+  /* --- SURPRISE SCREEN FIXES (ANDAR) --- */
+  .surprise-paper-card {
+    overflow-y: auto !important;
+    padding-bottom: 100px !important; 
+  }
 
-.surprise-btn-group {
-  position: absolute !important;
-  bottom: 15px !important; /* Buttons ko fix karo */
-  left: 0;
-  width: 100%;
-  justify-content: center;
-  z-index: 999;
-}
-   
-}
+  .dance-gif-wrap {
+    max-height: 22vh !important; 
+    margin-bottom: 10px !important;
+  }
+
+  .dance-gif-wrap img {
+    max-height: 22vh !important;
+    object-fit: contain !important;
+  }
+
+  .surprise-btn-group {
+    position: fixed !important; 
+    bottom: 20px !important; 
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    z-index: 9999;
+  }
+} /* <- YEH BRACKET SABSE ZAROORI HAI */
