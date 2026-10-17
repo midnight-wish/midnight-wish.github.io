@@ -500,8 +500,8 @@ html, body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-bottom: clamp(10px, 3vh, 30px);
-  margin-top: 2px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
   z-index: 10;
 }
 .pill-btn {
